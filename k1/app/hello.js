@@ -1,4 +1,4 @@
-import config from './data.json';
+import config from './data';
 import React, { Component } from 'react';
 import style from '../style/hello.css';
 

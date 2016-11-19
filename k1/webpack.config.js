@@ -6,7 +6,7 @@ module.exports = {
     devtool: 'eval-source-map',
     entry: __dirname + "/app/main.js",//已多次提及的唯一入口文件
     output: {
-        path: __dirname+ '/dist',
+        path: __dirname + '/dist',
         filename: "[name]-[hash].js"//打包后输出文件的文件名
     },
     module: {//在配置文件里添加JSON loader
@@ -37,6 +37,9 @@ module.exports = {
         new webpack.optimize.UglifyJsPlugin(),
         new ExtractTextPlugin("[name]-[hash].css")
     ],
+    resolve: {
+        extensions: ['', '.js', '.json']
+    },
     devServer: {
         contentBase: "./dist",//本地服务器所加载的页面所在的目录
         colors: true,//终端中输出结果为彩色

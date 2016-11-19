@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack -d"
+    "start": "webpack --watch",
+    "dev": "webpack-dev-server"
   },
   "author": "",
   "license": "ISC",
@@ -20,7 +21,8 @@
     "json-loader": "^0.5.4",
     "postcss-loader": "^1.1.1",
     "style-loader": "^0.13.1",
-    "webpack": "^1.13.3"
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
   },
   "dependencies": {
     "react": "^15.4.0",
